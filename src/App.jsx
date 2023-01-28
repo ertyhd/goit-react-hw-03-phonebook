@@ -17,9 +17,9 @@ class App extends Component {
   //     { id: 'id-4', name: 'Annie Copeland', number: '227-91-26' },
 
   componentDidMount() {
-    const items = JSON.parse(localStorage.getItem('my-contacts'));
-    if (items?.length) {
-      this.setState({ items });
+    const contacts = JSON.parse(localStorage.getItem('my-contacts'));
+    if (contacts?.length) {
+      this.setState({ contacts });
     }
   }
 
